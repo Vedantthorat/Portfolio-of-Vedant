@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="#" class="logo">VT</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero section container reveal">
+    <div>
+      <p class="eyebrow">Hi, I am</p>
+      <h1 class="gradient-text">Vedant Thorat</h1>
+      <p class="typing fade-in"><span id="typing"></span></p>
+      <p class="quote">Passionate about building modern web apps and exploring AI.</p>
+      <div class="cta">
+        <a href="#contact" class="btn ghost"></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orb"></div>
+      <div class="avatar">
+        <img src="vedant_new_photo.png" alt="photo" style="height:200px;width:200px;border-radius:50%;">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section container reveal">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p>
+        👋 Hi! I’m <strong>Vedant Thorat</strong>, a passionate 
+        <strong>B.Tech CSE (AI) student</strong>, aspiring 
+        <strong>Web Developer</strong>, and <strong>AI Enthusiast</strong>.
+      </p>
+      <p>
+        Currently in my <strong>3rd year</strong> with a <strong>CGPA of 8.44</strong>, 
+        I thrive at the intersection of <strong>problem-solving</strong> and <strong>innovation</strong>. 
+        With proficiency in <strong>Java, Python, HTML, CSS, and JavaScript</strong>, 
+        I am actively exploring <strong>Artificial Intelligence, Machine Learning, 
+        and Web Development</strong> to build impactful solutions.
+      </p>
+      <div class="about-highlights">
+        <div class="card highlight">
+          <span>🧩</span>
+          <h3>Core Expertise</h3>
+          <p>Data Structures & Algorithms, Web Development</p>
+        </div>
+        <div class="card highlight">
+          <span>⚡</span>
+          <h3>Hands-on</h3>
+          <p>Algorithm design, optimization, AI applications</p>
+        </div>
+        <div class="card highlight">
+          <span>🚀</span>
+          <h3>Future Goals</h3>
+          <p>AI-driven solutions, Advanced Web Dev, Data Analytics</p>
+        </div>
+      </div>
+      <p>
+        🌟 I’m always eager to <strong>collaborate</strong>, 
+        contribute to <strong>innovative projects</strong>, and 
+        take on <strong>internship opportunities</strong> where I can 
+        apply my skills while learning from real-world challenges.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section container reveal">
+    <h2 class="section-title">Skills</h2>
+    <h3>Frontend</h3>
+    <div class="grid skills-grid">
+      <div class="card skill"><span class="icon">💻</span> HTML/CSS</div>
+      <div class="card skill"><span class="icon">⚡</span> JavaScript</div>
+      <div class="card skill"><span class="icon">⚛️</span> React</div>
+      <div class="card skill"><span class="icon">🖌️</span> Tailwind CSS</div>
+      <div class="card skill"><span class="icon">🎨</span> UI/UX Design</div>
+    </div>
+    <h3>Backend</h3>
+    <div class="grid skills-grid">
+      <div class="card skill"><span class="icon">🗜️</span> Node.js</div>
+      <div class="card skill"><span class="icon">🐍</span> Python</div>
+      <div class="card skill"><span class="icon">🛡️</span> Java</div>
+      <div class="card skill"><span class="icon">🛠️</span> Git & GitHub</div>
+    </div>
+    <h3>Database</h3>
+    <div class="grid skills-grid">
+      <div class="card skill"><span class="icon">🗄️</span> Databases</div>
+      <div class="card skill"><span class="icon">☁️</span> Cloud Basics</div>
+    </div>
+    <h3>Learning & Extra</h3>
+    <div class="grid skills-grid">
+      <div class="card skill"><span class="icon">🧠</span> AI/ML Basics</div>
+      <div class="card skill"><span class="icon">🔧</span> Problem Solving</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+ <section id="projects" class="section container reveal">
+  <h2 class="section-title">Projects</h2>
+
+  <!-- Vertical container -->
+  <div class="projects-vertical">
+
+    <!-- Project 1: AI in Manufacturing -->
+    <div class="card project featured">
+      <img src="AIMANUFACTURING.png" alt="AI in Manufacturing" class="project-img" style="width:100%; height:200px; object-fit:cover; display:block;">
+      <div class="project-content" style="padding:20px; text-align:center;">
+        <h3 class="project-title">1. AI in Manufacturing – Smart Industry Guide 🌐</h3>
+        <p class="project-meta"><strong>May 2025 – Present</strong> | Nutan College of Engineering & Research</p>
+        <p class="project-desc">
+          An interactive and visually appealing web application built using 
+          <strong>HTML, CSS, and JavaScript</strong>, designed to guide entrepreneurs and 
+          industry professionals in choosing the right manufacturing domain.
+        </p>
+        <ul class="project-features" style="list-style:none; padding-left:0; text-align:left;">
+          <li>📍 Location-based domain suggestions (state-wise)</li>
+          <li>📊 Cost estimations & industry trends</li>
+          <li>⚙️ Challenges & Opportunities insights</li>
+          <li>🧠 AI-driven smart recommendations (optional)</li>
+          <li>🔐 Secure Login & Registration (Firebase)</li>
+          <li>📈 Responsive design</li>
+        </ul>
+        <p class="project-tech"><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Firebase Auth, OpenAI API</p>
+        <a href="https://solutionofindustrybyai.netlify.app/" target="_blank" class="btn project-link">🔗 View Live Project</a>
+      </div>
+      <div class="card-bottom-line"></div>
+    </div>
+
+    <!-- Project 2: Word Scramble Game -->
+    <div class="card project featured">
+      <div class="project-content" style="padding:20px; text-align:center;">
+        <h3 class="project-title">2. Word Scramble Game 🕹️</h3>
+        <p class="project-meta"><strong>Aug 2025</strong> | Personal Project</p>
+        <p class="project-desc">
+          A fun and interactive <strong>Python-based word puzzle game</strong> where players 
+          must unscramble shuffled words within a limited number of attempts.  
+          Built to improve problem-solving and Python logic skills.
+        </p>
+        <ul class="project-features" style="list-style:none; padding-left:0; text-align:left;">
+          <li>🔠 Random word generator</li>
+          <li>⏳ Limited attempts for guessing</li>
+          <li>🏆 Score tracking system</li>
+          <li>💻 Console-based interactive play</li>
+        </ul>
+        <p class="project-tech"><strong>Tech Stack:</strong> Python 3</p>
+        <a href="https://github.com/Vedantthorat/word-scramble-game/blob/main/README.md" target="_blank" class="btn project-link">🐙 View on GitHub</a>
+      </div>
+      <div class="card-bottom-line"></div>
+    </div>
+
+    <!-- Project 3: CPU Scheduling Simulator -->
+    <div class="card project featured">
+      <div class="project-content" style="padding:20px; text-align:center;">
+        <h3 class="project-title">3. CPU Scheduling Algorithms Simulator ⚡</h3>
+        <p class="project-meta"><strong>Jun 2025</strong> | Personal Project</p>
+        <p class="project-desc">
+          A <strong>Python-based simulation</strong> of fundamental CPU scheduling algorithms, 
+          built using Jupyter Notebook. The project helps students and developers 
+          understand how scheduling works in Operating Systems through hands-on implementation.
+        </p>
+        <ul class="project-features" style="list-style:none; padding-left:0; text-align:left;">
+          <li>🧠 Simulates <strong>FCFS, Round Robin, Priority Scheduling</strong></li>
+          <li>📌 User input for arrival time, burst time, priority, and quantum</li>
+          <li>⏳ Calculates completion, turnaround, and waiting times</li>
+          <li>📊 Generates Gantt Chart representation</li>
+          <li>💻 Clean and structured output formatting</li>
+        </ul>
+        <p class="project-tech"><strong>Tech Stack:</strong> Python (Jupyter Notebook)</p>
+        <a href="https://github.com/Vedantthorat/CPU-Scheduling-Methods-" target="_blank" class="btn project-link">🐙 View on GitHub</a>
+      </div>
+      <div class="card-bottom-line"></div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* Vertical container */
+  .projects-vertical {
+    display: flex;
+    flex-direction: column;   /* stack cards vertically */
+    align-items: center;      /* center horizontally */
+    gap: 40px;                /* space between cards */
+    padding: 40px 0;
+  }
+
+  /* Card styling */
+  .card.project.featured {
+    background: rgba(255,255,255,0.04);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;              /* take full container width */
+    max-width: 800px;         /* keep cards neat in center */
+    box-shadow: 0 8px 20px rgba(8,201,53,0.3);
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  }
+
+  /*Hover effect */
+  .card.project.featured:hover {
+    
+   
+    box-shadow: 0 15px 30px rgba(0,128,0,0.6);
+  }
+
+  /* Bottom colored line */
+  .card-bottom-line {
+    height: 5px;
+    background: linear-gradient(to right, red, blue, yellow);
+    width: 100%;
+  }
+
+  /* Buttons */
+  .btn.project-link {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: inline-block;
+    margin: 15px auto 0;
+    transition: 0.3s;
+  }
+
+  .btn.project-link:hover {
+    background: #0056b3;
+  }
+</style>
+
+
+
+  <!-- Experience -->
+ <h2 class="section-title" style="padding-left: 10rem; ; " >Experience</h2>
+
+<div class="card experience-card" style="border:1px solid #ddd; padding:15px; border-radius:10px; margin:10px;margin-left: 150px; box-shadow:0px 2px 5px rgba(0,0,0,0.2);">
+  <div class="exp-header" style="display:flex; align-items:center; gap:15px;">
+    <img src="edunet.png" alt="Edunet Foundation" class="exp-logo" style="height: 200px; width: 150px; border-radius:8px;">
+    <div>
+      <h3 style="margin:0; font-size:20px;">AI Intern – TechSaksham Program</h3>
+      <p class="company" style="margin:3px 0; color:gray;">Edunet Foundation | CSR by Microsoft & SAP</p>
+      <p class="duration" style="margin:3px 0; font-size:14px; color:#555;">Jan 2025 – Feb 2025 · Remote</p>
+    </div>
+  </div>
+  
+  <p class="exp-desc" style="margin:10px 0; font-size:15px; line-height:1.4;">
+    Completed a 2-month virtual internship on <strong>AI: Transformative Learning</strong>.
+  </p>
+  
+  <!-- Skill Buttons -->
+  <div style="margin-top:10px;">
+    <button style="background:#1d5005; color:white; border:none; padding:8px 15px; margin:5px; border-radius:20px; cursor:pointer; transition:0.3s;" 
+            onmouseover="this.style.background='#d1e7dd'" 
+            onmouseout="this.style.background='#1d5005'">Python</button>
+    <button style="background:#e11010; color:white; border:none; padding:8px 15px; margin:5px; border-radius:20px; cursor:pointer; transition:0.3s;" 
+            onmouseover="this.style.background='#d1e7dd'" 
+            onmouseout="this.style.background='#e11010'">Machine Learning</button>
+    <button style="background:#b123f3; color:white; border:none; padding:8px 15px; margin:5px; border-radius:20px; cursor:pointer; transition:0.3s;" 
+            onmouseover="this.style.background='#d1e7dd'" 
+            onmouseout="this.style.background='#b123f3'">AI Concepts</button>
+    <button style="background:#d484b0; color:white; border:none; padding:8px 15px; margin:5px; border-radius:20px; cursor:pointer; transition:0.3s;" 
+            onmouseover="this.style.background='#d1e7dd'" 
+            onmouseout="this.style.background='#d484b0'">Problem Solving</button>
+  </div>
+  
+  <!-- View Certificate Button -->
+  <div style="margin-top:15px;">
+    <a href="edunetinternship.png" target="_blank" 
+       style="background:#007BFF; color:white; padding:10px 18px; border-radius:25px; text-decoration:none; font-weight:bold; transition:0.3s;"
+       onmouseover="this.style.background='#1e90ff'" onmouseout="this.style.background='skyblue'">
+       View Certificate
+    </a>
+  </div>
+</div>
+
+
+
+
+      <!-- Internship 2 -->
+      <div class="card experience-card"  style="border:1px solid #ddd; padding:15px; border-radius:10px; margin:10px;margin-left: 150px; box-shadow:0px 2px 5px rgba(0,0,0,0.2);">
+  <div class="exp-header" style="display:flex; align-items:center; gap:15px;">
+    <img src="emertxelogo.png" alt="Emertxe Technologies" class="exp-logo" style="height: 250px; width: 150px;">
+    <div>
+      <h3>IoT Intern</h3>
+      <p class="company">Emertxe Information Technologies</p>
+      <p class="duration">Jul 2024 – Sep 2024 · Remote</p>
+    </div>
+  </div>
+
+  <p class="exp-desc">
+    Strengthened <strong>C programming</strong> and gained hands-on experience with 
+    microcontrollers. Worked on an <strong>IoT project</strong>.
+  </p>
+
+  <div style="margin-top:10px;">
+    <button style="background:#1d5005; color:white; border:none; padding:8px 15px; margin:5px; border-radius:20px; cursor:pointer; transition:0.3s;" 
+            onmouseover="this.style.background='#d1e7dd'" 
+            onmouseout="this.style.background='#1d5005'">C programming</button>
+    <button style="background:#e11010; color:white; border:none; padding:8px 15px; margin:5px; border-radius:20px; cursor:pointer; transition:0.3s;" 
+            onmouseover="this.style.background='#d1e7dd'" 
+            onmouseout="this.style.background='#e11010'">Projects</button>
+    <button style="background:#b123f3; color:white; border:none; padding:8px 15px; margin:5px; border-radius:20px; cursor:pointer; transition:0.3s;" 
+            onmouseover="this.style.background='#d1e7dd'" 
+            onmouseout="this.style.background='#b123f3'">IoT Concepts</button>
+    <button style="background:#d484b0; color:white; border:none; padding:8px 15px; margin:5px; border-radius:20px; cursor:pointer; transition:0.3s;" 
+            onmouseover="this.style.background='#d1e7dd'" 
+            onmouseout="this.style.background='#d484b0'">Problem Solving</button>
+  </div>
+  
+  <!-- View Certificate Button -->
+  <div style="margin-top:15px;">
+    <a href="emertxe.png" target="_blank" 
+       style="background:#007BFF; color:white; padding:10px 18px; border-radius:25px; text-decoration:none; font-weight:bold; transition:0.3s;"
+       onmouseover="this.style.background='#1e90ff'" onmouseout="this.style.background='skyblue'">
+       View Certificate
+    </a>
+  </div>
+</div>
+
+
+  <!-- Contact Section -->
+  <section id="contact" style="padding:3rem 1rem; background:#0d1117; color:#c9d1d9; text-align:center;">
+  <h2 style="font-size:2rem; margin-bottom:1rem;">Let's Work Together</h2>
+  <p style="margin-bottom:2rem; font-size:1rem; color:#8b949e;">Have an idea or opportunity? Feel free to reach out!</p>
+
+  <!-- Contact Form -->
+  <form id="contactForm" class="contact-form" method="POST" action="http://localhost:3000/submit"
+        style="flex:0; width:600px; background:rgba(15, 9, 9, 0.92); 
+               padding:15px; margin:100px auto; box-shadow:0 4px 12px rgba(0,0,0,0.25); justify-content: center;">
+
+    <label style="display:block; margin-bottom:15px; font-weight:600; color:#e7dada;">
+      Name
+      <input type="text" name="name" required
+             style="width:100%; padding:12px; margin-top:6px; border:1px solid #ded1d1; border-radius:8px; font-size:1rem;">
+    </label>
+
+    <label style="display:block; margin-bottom:15px; font-weight:600; color:#d8cccc;">
+      Email
+      <input type="email" name="email" required
+             style="width:100%; padding:12px; margin-top:6px; border:1px solid #cfc8c8; border-radius:8px; font-size:1rem;">
+    </label>
+
+    <label style="display:block; margin-bottom:15px; font-weight:600; color:#dacdcd;">
+      Message
+      <textarea name="message" rows="5" required
+                style="width:100%; padding:12px; margin-top:6px; border:1px solid #ccc; border-radius:8px; font-size:1rem; resize:none;"></textarea>
+    </label>
+
+    <button type="submit"
+            style="background:#ed4b10; color:#000; padding:14px 20px; border:none; border-radius:8px; font-size:1rem; font-weight:600; width:100%; cursor:pointer; transition:0.3s;">
+      Send Message
+    </button>
+</form>
+
+<!-- Put this script block just before </body> -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
+
+  // ✅ Your Firebase config (copy this exactly from Project Settings → SDK setup & configuration)
+  const firebaseConfig = {
+    apiKey: "AIzaSyAwrSeSiJXPb-iSK8d2pjWl2l53QoXbrKs",
+    authDomain: "portfolio-contact-84067.firebaseapp.com",
+    projectId: "portfolio-contact-84067",
+    storageBucket: "portfolio-contact-84067.appspot.com", // corrected
+    messagingSenderId: "563607606744",
+    appId: "1:563607606744:web:9e377386626da3c88e0ead",
+    measurementId: "G-TQW16LSENM"
+  };
+
+  // Initialize Firebase + Firestore
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Handle form submit
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    const formData = new FormData(form);
+    const payload = {
+      name: formData.get('name') || '',
+      email: formData.get('email') || '',
+      message: formData.get('message') || '',
+      createdAt: serverTimestamp()
+    };
+
+    try {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      // Save to Firestore
+      await addDoc(collection(db, 'contacts'), payload);
+
+      alert('Message sent — thank you!');
+      form.reset();
+    } catch (err) {
+      console.error('Firestore error:', err);
+      alert('There was an error sending your message. Please try again later.');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+    }
+  });
+</script>
+
+
+</section>
+
+
+
+    <style>
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .social-icons a img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%; /* makes them round */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .social-icons a img:hover {
+      transform: scale(1.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="social-icons">
+    <!-- GitHub -->
+    <a href="https://github.com/Vedantthorat" target="_blank">
+      <img src="githubicon.png" alt="GitHub Logo">
+    </a>
+
+    <!-- CodeChef -->
+    <a href="https://www.codechef.com/users/vedant_87" target="_blank">
+      <img src="codechef logo.jpeg" alt="CodeChef Logo" width="80px">
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/vedant-thorat-156b8628b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZonUa1RFTIKF9mRqwVNL4g%3D%3D" target="_blank">
+      <img src="linkedinicon.png" alt="LinkedIn Logo">
+    </a>
+
+    <!-- Twitter -->
+    <a href="https://www.hackerrank.com/profile/vedantthorat019" target="_blank">
+      <img src="hackeernak logo.jpeg" alt="Twitter Logo">
+    </a>
+
+    <a href="mailto:vedantthorat019@gmail.com">
+  <img src="emailicon.png" alt="Email Icon">
+</a>
+
+  </div>
+
+  <!-- JS 
+  <script>
+  const form = document.querySelector('.contact-form');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const data = {
+      name: form.querySelector('[name="name"]').value,
+      email: form.querySelector('[name="email"]').value,
+      message: form.querySelector('[name="message"]').value
+    };
+
+    try {
+      const response = await fetch('http://localhost:3000/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        alert('✅ Message sent successfully!');
+        form.reset();
+      } else {
+        const errText = await response.text();
+        alert('❌ Failed: ' + errText);
+      }
+    } catch (err) {
+      console.error(err);
+      alert('⚠️ Error sending message.');
+    }
+  });
+  </script>
+
+  <!-- Footer -->
+  <footer style="background:#0d1117; color:#8b949e; text-align:center; padding:1rem; margin-top:2rem; border-top:1px solid #30363d;">
+    <p style="margin:0; font-size:0.9rem;">© 2025 Vedant Thorat | All Rights Reserved</p>
+    <a href="#hero" class="to-top" style="color:#58a6ff; text-decoration:none; font-size:1.2rem; margin-left:10px;">↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+
+<style>
+    /* Default Light Mode */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* Dark Mode */
+    body.dark {
+      background: #000000;
+      color: #ffffff;
+    }
+
+    /* Theme Toggle Button */
+    #theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #000;
+      color: #fff;
+      font-weight: 600;
+      z-index: 1000;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle">🌙 Dark Mode</button>
+
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    // Load saved theme if exists
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+      toggleBtn.textContent = "☀️ Light Mode";
+      toggleBtn.style.background = "#fff";
+      toggleBtn.style.color = "#000";
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+
+      if (document.body.classList.contains("dark")) {
+        toggleBtn.textContent = "☀️ Light Mode";
+        toggleBtn.style.background = "#fff";
+        toggleBtn.style.color = "#000";
+        localStorage.setItem("theme", "dark");
+      } else {
+        toggleBtn.textContent = "🌙 Dark Mode";
+        toggleBtn.style.background = "#000";
+        toggleBtn.style.color = "#fff";
+        localStorage.setItem("theme", "light");
+      }
+    });
+  </script>
+</body>
+</html>
