@@ -1,0 +1,9 @@
+ls -la .gitignore
+cat .gitignore
+
+node_modules
+.env
+.DS_Store
+npm-debug.log
+
+
