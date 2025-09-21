@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio with Theme Toggle</title>
+  <style>
+    /* Default (Light Theme) Variables */
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --card-color: #f5f5f5;
+      --button-bg: #ed4b10;
+      --button-text: #000000;
+    }
+
+    /* Dark Theme Overrides */
+    body.dark {
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --card-color: #1e1e1e;
+      --button-bg: #ff9800;
+      --button-text: #ffffff;
+    }
+
+    /* Apply theme variables */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .contact-form {
+      width: 600px;
+      background: var(--card-color);
+      padding: 15px;
+      margin: 100px auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      border-radius: 12px;
+    }
+
+    /* Floating Theme Toggle Button */
+    #theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: var(--button-bg);
+      color: var(--button-text);
+      font-weight: 600;
+      transition: background 0.3s ease, color 0.3s ease;
+      z-index: 1000;
+    }
+
+    /* Inputs */
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: #fff;
+    }
+
+    body.dark input,
+    body.dark textarea {
+      background: #2c2c2c;
+      color: #fff;
+      border: 1px solid #555;
+    }
+
+    button[type="submit"] {
+      background: #ed4b10;
+      color: #000;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      width: 100%;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle">🌙 Dark Mode</button>
+
+  <!-- Example Contact Form -->
+  <form class="contact-form" method="POST" action="http://localhost:3000/submit">
+    <label>
+      Name
+      <input type="text" name="name" required>
+    </label><br><br>
+
+    <label>
+      Email
+      <input type="email" name="email" required>
+    </label><br><br>
+
+    <label>
+      Message
+      <textarea name="message" rows="5" required></textarea>
+    </label><br><br>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    // Load saved theme (if any)
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+      toggleBtn.textContent = "☀️ Light Mode";
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+
+      if (document.body.classList.contains("dark")) {
+        toggleBtn.textContent = "☀️ Light Mode";
+        localStorage.setItem("theme", "dark");
+      } else {
+        toggleBtn.textContent = "🌙 Dark Mode";
+        localStorage.setItem("theme", "light");
+      }
+    });
+  </script>
+
+<style>
+    /* Default Light Mode */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* Dark Mode */
+    body.dark {
+      background: #000000;
+      color: #ffffff;
+    }
+
+    /* Theme Toggle Button */
+    #theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #000;
+      color: #fff;
+      font-weight: 600;
+      z-index: 1000;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle">🌙 Dark Mode</button>
+
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    // Load saved theme if exists
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+      toggleBtn.textContent = "☀️ Light Mode";
+      toggleBtn.style.background = "#fff";
+      toggleBtn.style.color = "#000";
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+
+      if (document.body.classList.contains("dark")) {
+        toggleBtn.textContent = "☀️ Light Mode";
+        toggleBtn.style.background = "#fff";
+        toggleBtn.style.color = "#000";
+        localStorage.setItem("theme", "dark");
+      } else {
+        toggleBtn.textContent = "🌙 Dark Mode";
+        toggleBtn.style.background = "#000";
+        toggleBtn.style.color = "#fff";
+        localStorage.setItem("theme", "light");
+      }
+    });
+  </script>
+
+
+
+</body>
+</html>
